@@ -13,6 +13,7 @@
         <module>config</module>
         <module>favorite-color</module>
         <module>bank-balance</module>
+        <module>stream-enricher</module>
     </modules>
 
     <build>

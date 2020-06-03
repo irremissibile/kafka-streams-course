@@ -18,7 +18,7 @@ public class TransactionsProducer {
     public static void main(String[] args) {
         Logger logger = LoggerFactory.getLogger(TransactionsProducer.class);
 
-        Producer<String, JsonNode> producer = new KafkaProducer<String, JsonNode>(KafkaStreamsConfig.getIdempotentProducerProperties());
+        Producer<String, JsonNode> producer = new KafkaProducer<String, JsonNode>(KafkaStreamsConfig.getIdempotentJsonProducerProperties());
 
         int i = 0;
         while (true) {
